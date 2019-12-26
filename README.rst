@@ -6,6 +6,27 @@ async function / method calls right from Lua.
 
 .. _Lupa: https://github.com/scoder/lupa
 
-Documentation: To Be Added
+Calling Async functions in Lua
+------------------------------
+AsyncLupa support all Lupa's methods that execute Lua code in any way.
+It includes ``AsyncLupa.execute``, ``AsyncLupa.eval``, and ``AsyncLupa.compile``, it also supports all the other methods also.
 
-Changelog:
+An example is shown below
+
+.. code-block:: python
+
+    from asynclupa import AsyncLuaRuntime
+    import asyncio
+
+    async def hello():
+        return 1
+
+    async def main():
+        async_lua = AsyncLuaRuntime()
+        async_lua.globals()['hello'] = hello
+
+        ret = await async_lua.eval('python.coroutine(hello())')
+
+    asyncio.run(eval_lua(lua_code))
+
+
