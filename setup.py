@@ -1,10 +1,6 @@
 from setuptools import setup
 import re
 
-requirements = []
-with open('requirements.txt') as f:
-  requirements = f.read().splitlines()
-
 version = ''
 with open('asynclupa/version.py') as f:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
@@ -30,8 +26,8 @@ setup(name='AsyncLupa',
       long_description=readme,
       long_description_content_type="text/x-rst",
       include_package_data=True,
-      install_requires=requirements,
-      python_requires='>=3.5.3',
+      install_requires=['lupa'],
+      python_requires='>=2',
       classifiers=[
           'Development Status :: 5 - Production/Stable',
           'Intended Audience :: Developers',
