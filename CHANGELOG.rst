@@ -10,3 +10,7 @@ AsyncLupa Changelog
     .. code-block:: lua
 
         ret_val = python.coroutine(python_async_function)
+
+1.1 (2019-12-26)
+----------------
+* Fixed PyPi download 
