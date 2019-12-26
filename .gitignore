@@ -1,0 +1,18 @@
+# Build/test processes
+
+.tox
+.idea
+build
+dist
+MANIFEST
+*.pyc
+*.egg-info
+*.so
+*.c
+*.patch
+wheel*/
+asynclupa/version.py
+venv
+
+# Vim swapfiles
+*.swp
