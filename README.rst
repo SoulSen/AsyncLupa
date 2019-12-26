@@ -6,6 +6,18 @@ async function / method calls right from Lua.
 
 .. _Lupa: https://github.com/scoder/lupa
 
+Installation
+------------
+.. code-block::
+
+    pip install asynclupa
+
+If you want the latest version that has not yet been released 
+
+.. code-block::
+
+    pip install git+https://github.com/SoulSen/AsyncLupa
+
 Calling Async functions in Lua
 ------------------------------
 AsyncLupa support all Lupa's methods that execute Lua code in any way.
