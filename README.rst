@@ -12,7 +12,7 @@ Installation
 
     pip install asynclupa
 
-If you want the latest version that has not yet been released 
+If you want the latest version that has not yet been released
 
 .. code-block::
 
@@ -37,7 +37,8 @@ An example is shown below
         async_lua = AsyncLuaRuntime()
         async_lua.globals()['hello'] = hello
 
-        ret = await async_lua.eval('python.coroutine(hello())')
+        ret = await async_lua.eval('return python.coroutine(hello())')
+        print(ret)  # Outputs 1
 
     asyncio.run(eval_lua(lua_code))
 
