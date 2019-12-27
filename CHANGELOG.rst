@@ -6,11 +6,11 @@ AsyncLupa Changelog
 
 * Released AsyncLupa Publicly
 * ``AsyncLuaRuntime`` provides async wrappers for ``LuaRuntime.execute``, ``LuaRuntime.compile``, and ``LuaRuntime.eval``
-* ``AsyncLuaRuntime`` is used to invoke async functions from Lua e
+* ``AsyncLuaRuntime`` is used to invoke async functions from Lua ex.
 
-    .. code-block:: lua
+.. code-block:: lua
 
-        ret_val = python.coroutine(python_async_function)
+    ret_val = python.coroutine(python_async_function)
 
 1.1 (2019-12-26)
 ----------------
