@@ -4,7 +4,7 @@ import asyncio
 
 class AsyncLuaRuntime(LuaRuntime):
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+        super(self).__init__(*args, **kwargs)
 
         self.loop = asyncio.get_event_loop()
         self.globals()['python'].coroutine = self.coroutine
