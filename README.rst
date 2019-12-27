@@ -10,7 +10,7 @@ Installation
 ------------
 .. code-block::
 
-    pip install asynclupa
+    pip install AsyncLupa
 
 If you want the latest version that has not yet been released
 
