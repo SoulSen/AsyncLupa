@@ -1,7 +1,7 @@
 AsyncLupa
 =========
 
-AsyncLupa integrates with the well known Lupa_ library, providing an async wrapper allowing
+AsyncLupa integrates with the well known Lupa_ library, providing an asynchronous wrapper allowing
 async function / method calls right from Lua.
 
 .. _Lupa: https://github.com/scoder/lupa
@@ -10,7 +10,7 @@ Installation
 ------------
 .. code-block::
 
-    pip install asynclupa
+    pip install AsyncLupa
 
 If you want the latest version that has not yet been released
 
