@@ -14,4 +14,8 @@ AsyncLupa Changelog
 
 1.1 (2019-12-26)
 ----------------
-* Fixed PyPi download 
+* Fixed PyPi download
+
+1.2 (2019-12-26)
+----------------
+* Fix Bug where ``LuaRuntime`` cannot be initialized
