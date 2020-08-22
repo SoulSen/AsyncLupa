@@ -5,7 +5,8 @@ import asyncio
 class AsyncLuaRuntime(LuaRuntime):
     def __init__(self, *args, **kwargs):
         self.loop = asyncio.get_event_loop()
-        self.globals()['python'].coroutine = self.coroutine
+        self.globals()['python'].await = self.coroutine
+        self.globals()['python'].async = asyncio.coroutine
 
     async def execute(self, lua_code, *args):
         return await self.loop.run_in_executor(None, super().execute, lua_code, *args)
